@@ -1,0 +1,51 @@
+.container {
+  @apply flex h-full;
+}
+
+.align-items {
+  &--start {
+    @apply items-start;
+  }
+
+  &--end {
+    @apply items-end;
+  }
+
+  &--center {
+    @apply items-center;
+  }
+
+  &--baseline {
+    @apply items-baseline;
+  }
+
+  &--stretch {
+    @apply items-start;
+  }
+}
+
+.justify-content {
+  &--start {
+    @apply justify-start;
+  }
+
+  &--end {
+    @apply justify-end;
+  }
+
+  &--center {
+    @apply justify-center;
+  }
+
+  &--between {
+    @apply justify-between;
+  }
+
+  &--around {
+    @apply justify-around;
+  }
+
+  &--evenly {
+    @apply justify-evenly;
+  }
+}
