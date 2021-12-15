@@ -11,17 +11,24 @@ type PropsType = {
     | "between"
     | "around"
     | "evently";
+  spaceX?: 0 | 3 | 4;
 };
 
 const FlexBox = (props: PropsType) => {
-  const { children, alignItems = "start", justifyContent = "start" } = props;
+  const {
+    children,
+    alignItems = "start",
+    justifyContent = "start",
+    spaceX = 0,
+  } = props;
 
   return (
     <div
       className={classNames(
         styles["container"],
         styles[`align-items--${alignItems}`],
-        styles[`justify-content--${justifyContent}`]
+        styles[`justify-content--${justifyContent}`],
+        styles[`space-x--${spaceX}`]
       )}
     >
       {children}

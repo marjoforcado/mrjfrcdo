@@ -1,5 +1,5 @@
 .container {
-  @apply flex h-full;
+  @apply flex h-full space-x-3;
 }
 
 .align-items {
@@ -47,5 +47,19 @@
 
   &--evenly {
     @apply justify-evenly;
+  }
+}
+
+.space-x {
+  &--0 {
+    @apply space-x-0;
+  }
+
+  &--3 {
+    @apply space-x-3;
+  }
+
+  &--4 {
+    @apply space-x-4;
   }
 }
