@@ -1,4 +1,4 @@
-import { Container, FlexBox } from "..";
+import { Button, Container, FlexBox } from "..";
 import styles from "./styles.module.scss";
 
 const Navbar = () => (
@@ -7,9 +7,9 @@ const Navbar = () => (
       <FlexBox justifyContent="between" alignItems="center">
         <h1>Navbar</h1>
         <FlexBox alignItems="center" spaceX={4}>
-          <button>Link 1</button>
-          <button>Link 2</button>
-          <button>Link 3</button>
+          <Button>Link 1</Button>
+          <Button>Link 2</Button>
+          <Button>Link 3</Button>
         </FlexBox>
       </FlexBox>
     </Container>
