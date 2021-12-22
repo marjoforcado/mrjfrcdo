@@ -1,3 +1,11 @@
 .navbar {
-  @apply border-b h-16;
+  @apply h-16 bg-pink-700;
+}
+
+.collapse-btn {
+  @apply h-6 w-6 text-black;
+}
+
+.brand {
+  @apply font-roboto-slab font-bold text-white;
 }

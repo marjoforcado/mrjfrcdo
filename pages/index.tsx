@@ -2,6 +2,6 @@ import { NextPageWithLayout } from "./_app";
 
 const IndexPage: NextPageWithLayout = () => <div>landing</div>;
 
-IndexPage.layout = "default";
+IndexPage.layout = "profile";
 
 export default IndexPage;

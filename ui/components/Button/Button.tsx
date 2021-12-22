@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 
 type PropsType = {
-  children: string;
+  children: any;
 };
 
 const Button = (props: PropsType) => {

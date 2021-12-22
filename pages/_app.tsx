@@ -1,10 +1,10 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import { NextPage } from "next";
-import { DefaultLayout } from "../ui/layouts";
+import { DefaultLayout, ProfileLayout } from "../ui/layouts";
 
 export type NextPageWithLayout = NextPage & {
-  layout?: "default";
+  layout?: "default" | "profile";
 };
 
 type AppPropsWithLayout = AppProps & {
@@ -20,6 +20,13 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         <DefaultLayout>
           <Component {...pageProps} />
         </DefaultLayout>
+      );
+    }
+    case "profile": {
+      return (
+        <ProfileLayout>
+          <Component {...pageProps} />
+        </ProfileLayout>
       );
     }
     default: {

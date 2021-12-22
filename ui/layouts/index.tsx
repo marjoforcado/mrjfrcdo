@@ -1,3 +1,4 @@
 import DefaultLayout from "./DefaultLayout";
+import ProfileLayout from "./ProfileLayout";
 
-export { DefaultLayout };
+export { DefaultLayout, ProfileLayout };
