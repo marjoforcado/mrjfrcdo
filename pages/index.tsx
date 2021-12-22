@@ -1,9 +1,7 @@
-import { Navbar } from "../ui/components";
+import { NextPageWithLayout } from "./_app";
 
-const IndexPage = () => (
-  <>
-    <Navbar />
-  </>
-);
+const IndexPage: NextPageWithLayout = () => <div>landing</div>;
+
+IndexPage.layout = "default";
 
 export default IndexPage;
