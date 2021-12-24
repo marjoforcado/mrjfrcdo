@@ -1,3 +1,11 @@
 .description {
   @apply flex flex-col space-y-4 justify-center text-center items-center;
 }
+
+.profile-pic {
+  @apply rounded-full;
+}
+
+.section-1 {
+  @apply bg-gray-100;
+}

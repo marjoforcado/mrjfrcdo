@@ -11,9 +11,9 @@ const Button = (props: PropsType) => {
 
   return (
     <button className={styles["btn"]}>
-      {clipLeft && clipLeft}
-      {children}
-      {clipRight && clipRight}
+      {clipLeft && <span>{clipLeft}</span>}
+      <span>{children}</span>
+      {clipRight && <span>{clipRight}</span>}
     </button>
   );
 };
