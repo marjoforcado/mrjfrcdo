@@ -8,9 +8,9 @@ const Navbar = () => (
       <div className={styles["nav-body"]}>
         <h1 className={styles["brand"]}>Mrjfrcdo</h1>
         <FlexBox spaceX={6} alignItems="center">
-          <Button>About</Button>
-          <Button>Portfolio</Button>
-          <Button>Contact</Button>
+          <a>About</a>
+          <a>Portfolio</a>
+          <a>Contact</a>
         </FlexBox>
       </div>
     </Container>
