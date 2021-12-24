@@ -1,5 +1,5 @@
 .navbar {
-  @apply h-16 bg-pink-700;
+  @apply py-3;
 }
 
 .collapse-btn {
@@ -7,5 +7,9 @@
 }
 
 .brand {
-  @apply font-roboto-slab font-bold text-white;
+  @apply font-roboto-slab font-bold;
+}
+
+.nav-body {
+  @apply flex flex-col items-center space-y-3;
 }

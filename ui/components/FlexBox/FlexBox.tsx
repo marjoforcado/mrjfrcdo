@@ -11,7 +11,8 @@ type PropsType = {
     | "between"
     | "around"
     | "evently";
-  spaceX?: 0 | 3 | 4;
+  spaceX?: 0 | 3 | 4 | 6;
+  direction?: "row" | "row-reverse" | "col" | "col-reverse";
 };
 
 const FlexBox = (props: PropsType) => {
@@ -20,6 +21,7 @@ const FlexBox = (props: PropsType) => {
     alignItems = "start",
     justifyContent = "start",
     spaceX = 0,
+    direction = "row",
   } = props;
 
   return (
@@ -28,7 +30,8 @@ const FlexBox = (props: PropsType) => {
         styles["container"],
         styles[`align-items--${alignItems}`],
         styles[`justify-content--${justifyContent}`],
-        styles[`space-x--${spaceX}`]
+        styles[`space-x--${spaceX}`],
+        styles[`flex-direction--${direction}`]
       )}
     >
       {children}

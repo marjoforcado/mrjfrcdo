@@ -62,4 +62,26 @@
   &--4 {
     @apply space-x-4;
   }
+
+  &--6 {
+    @apply space-x-6;
+  }
+}
+
+.flex-direction {
+  &--row {
+    @apply flex-row;
+  }
+
+  &--row-revers {
+    @apply flex-row-reverse;
+  }
+
+  &--col {
+    @apply flex-col;
+  }
+
+  &--col-reverse {
+    @apply flex-col-reverse;
+  }
 }

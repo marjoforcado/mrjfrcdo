@@ -1,0 +1,9 @@
+.font-face {
+  &--roboto-slab {
+    @apply font-roboto-slab;
+  }
+
+  &--courier-prime {
+    @apply font-courier-prime;
+  }
+}
