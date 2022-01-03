@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         "roboto-slab": "'Roboto Slab', serif",
         "courier-prime": "'Courier Prime', monospace",
+        "bebas-neue": "'Bebas Neue', cursive",
       },
     },
   },
