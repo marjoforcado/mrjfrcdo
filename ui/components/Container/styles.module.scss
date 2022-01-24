@@ -1,5 +1,9 @@
 .app-container {
-  @apply container mx-auto py-4 px-3;
+  @apply container px-6 py-4;
+}
+
+.center-horizontal {
+  @apply mx-auto;
 }
 
 .full-height {

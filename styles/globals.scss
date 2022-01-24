@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  @apply bg-neutral-900;
+}
+
 @font-face {
   font-family: Roboto Slab;
   src: url("/public/assets/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
