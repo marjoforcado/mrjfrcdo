@@ -17,3 +17,7 @@
 .section-1 {
   @apply flex flex-col gap-3;
 }
+
+.blinker {
+  @apply text-stone-300 animate-blink;
+}

@@ -9,7 +9,8 @@ const IndexPage: NextPageWithLayout = () => (
       <p className={styles["greetings"]}>
         Hi, I&apos;m{" "}
         <span className={styles["highlight-red"]}>Marjo Forcado</span> a
-        Fullstack Javascript Engineer.
+        Fullstack Javascript Engineer.{" "}
+        <span className={styles["blinker"]}>|</span>
       </p>
       <p className={styles["description"]}>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum velit
