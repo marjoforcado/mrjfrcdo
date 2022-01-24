@@ -7,7 +7,7 @@ const IndexPage: NextPageWithLayout = () => (
   <Container centerHorizontal>
     <div className={styles["section-1"]}>
       <p className={styles["greetings"]}>
-        Hi I&apos;m{" "}
+        Hi, I&apos;m{" "}
         <span className={styles["highlight-red"]}>Marjo Forcado</span> a
         Fullstack Javascript Engineer.
       </p>
