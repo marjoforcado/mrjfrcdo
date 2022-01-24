@@ -4,7 +4,7 @@ import { NextPageWithLayout } from "./_app";
 import styles from "./styles.module.scss";
 
 const IndexPage: NextPageWithLayout = () => (
-  <Container>
+  <Container centerHorizontal>
     <div className={styles["section-1"]}>
       <p className={styles["greetings"]}>
         Hi I&apos;m{" "}
