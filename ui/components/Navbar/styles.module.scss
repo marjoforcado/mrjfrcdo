@@ -18,7 +18,7 @@
   }
 }
 
-.toggle {
+.icons {
   @apply text-stone-300 h-7 w-7;
 }
 
@@ -28,4 +28,8 @@
   &--is-toggled {
     @apply h-[calc(theme(height.screen)_-_theme(height.20))];
   }
+}
+
+.items-right {
+  @apply flex items-center gap-3;
 }
