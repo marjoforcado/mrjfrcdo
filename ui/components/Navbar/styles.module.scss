@@ -11,10 +11,10 @@
 }
 
 .links-container {
-  @apply flex flex-col h-full justify-between items-center;
+  @apply flex flex-col py-16 h-[calc(theme(height.screen)_-_theme(height.20))] justify-between items-center;
 
   & > li {
-    @apply text-neutral-900 font-black text-2xl px-5 py-16;
+    @apply text-neutral-900 font-black text-2xl;
   }
 }
 

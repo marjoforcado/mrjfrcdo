@@ -7,6 +7,10 @@ body {
   @apply bg-neutral-900;
 }
 
+body.nav-dropdown-toggled {
+  @apply overflow-hidden;
+}
+
 @font-face {
   font-family: Roboto Slab;
   src: url("/public/assets/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
