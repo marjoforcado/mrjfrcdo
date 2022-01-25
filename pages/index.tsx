@@ -1,4 +1,4 @@
-import { Card, Container } from "../ui/components";
+import { Container, ExperienceCard } from "../ui/components";
 import { NextPageWithLayout } from "./_app";
 
 import styles from "./styles.module.scss";
@@ -25,10 +25,34 @@ const IndexPage: NextPageWithLayout = () => (
     </Container>
     <Container centerHorizontal>
       <div className={styles["section-2"]}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <ExperienceCard
+          title="FFUF Manila Inc."
+          position="Web Developer"
+          duration="2016 - 2018"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          iusto harum vel quam ex nemo magni. Sed consequatur facilis facere"
+        />
+        <ExperienceCard
+          title="FFUF Manila Inc."
+          position="Web Developer"
+          duration="2016 - 2018"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          iusto harum vel quam ex nemo magni. Sed consequatur facilis facere"
+        />
+        <ExperienceCard
+          title="FFUF Manila Inc."
+          position="Web Developer"
+          duration="2016 - 2018"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          iusto harum vel quam ex nemo magni. Sed consequatur facilis facere"
+        />
+        <ExperienceCard
+          title="FFUF Manila Inc."
+          position="Web Developer"
+          duration="2016 - 2018"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          iusto harum vel quam ex nemo magni. Sed consequatur facilis facere"
+        />
       </div>
     </Container>
   </>

@@ -1,0 +1,19 @@
+.title {
+  @apply text-lg font-black text-rose-800;
+}
+
+.description {
+  @apply text-sm text-stone-400 leading-snug ml-1;
+}
+
+.position {
+  @apply text-sm font-bold text-stone-300 mb-2;
+}
+
+.duration {
+  @apply text-xs ml-1;
+}
+
+.read-more {
+  @apply text-xs font-bold underline text-sky-500;
+}

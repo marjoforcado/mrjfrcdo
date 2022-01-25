@@ -1,6 +1,8 @@
 .card {
   @apply border-l-4 border-rose-800;
 
+  & > .content,
+  & > .header:only-child,
   & > .header {
     @apply p-3;
   }
@@ -9,35 +11,7 @@
     @apply pb-0;
   }
 
-  & > .header:only-child {
-    @apply p-3;
-  }
-
-  & > .content {
-    @apply p-3;
-  }
-
   & > .header + .content {
     @apply pt-0;
   }
-}
-
-.heading {
-  @apply text-lg font-black text-rose-800;
-}
-
-.description {
-  @apply text-sm text-stone-400 leading-snug;
-}
-
-.position {
-  @apply text-sm font-bold text-stone-300 mb-2;
-}
-
-.duration {
-  @apply text-xs;
-}
-
-.read-more {
-  @apply text-xs font-bold underline text-sky-500;
 }
