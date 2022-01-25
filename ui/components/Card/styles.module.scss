@@ -1,5 +1,25 @@
 .card {
-  @apply px-3 pb-2 pt-1 border-l-4 border-rose-800;
+  @apply border-l-4 border-rose-800;
+
+  & > .header {
+    @apply p-3;
+  }
+
+  & > .header:first-child {
+    @apply pb-0;
+  }
+
+  & > .header:only-child {
+    @apply p-3;
+  }
+
+  & > .content {
+    @apply p-3;
+  }
+
+  & > .header + .content {
+    @apply pt-0;
+  }
 }
 
 .heading {
