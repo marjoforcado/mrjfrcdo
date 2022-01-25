@@ -1,0 +1,23 @@
+.card {
+  @apply px-3 pb-2 pt-1 border-l-4 border-rose-800;
+}
+
+.heading {
+  @apply text-lg font-black text-rose-800;
+}
+
+.description {
+  @apply text-sm text-stone-400 leading-snug;
+}
+
+.position {
+  @apply text-sm font-bold text-stone-300 mb-2;
+}
+
+.duration {
+  @apply text-xs;
+}
+
+.read-more {
+  @apply text-xs font-bold underline text-sky-500;
+}
