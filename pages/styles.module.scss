@@ -25,3 +25,11 @@
 .blinker {
   @apply text-stone-300 animate-blink;
 }
+
+.icon {
+  @apply text-stone-300 w-6 h-6 inline;
+}
+
+.actions-container {
+  @apply flex gap-2 items-center;
+}
