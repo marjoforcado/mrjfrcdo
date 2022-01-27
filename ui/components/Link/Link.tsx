@@ -1,14 +1,21 @@
 import LinkComponent from "next/link";
+import Button, { PropsType as ButtonProps } from "../Button";
 
-type PropsType = {
+type PropsType = ButtonProps & {
   href: string;
   children: any;
 };
 
 const Link = (props: PropsType) => {
-  const { href, children } = props;
+  const { children, href, ...rest } = props;
 
-  return <LinkComponent href={href}>{children}</LinkComponent>;
+  return (
+    <LinkComponent href={href} passHref>
+      <Button component="a" {...rest}>
+        {children}
+      </Button>
+    </LinkComponent>
+  );
 };
 
 export default Link;

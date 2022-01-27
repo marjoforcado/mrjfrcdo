@@ -2,6 +2,7 @@ import {
   Button,
   Container,
   ExperienceCard,
+  Link,
   SkillRating,
   Text,
 } from "../ui/components";
@@ -177,9 +178,15 @@ const RecruiterHub = () => (
         Quibusdam architecto quisquam, numquam non dolor nulla quidem corrupti
         vel.
       </Text>
-      <Button rounded="full" variant="solid" color="link" size="large">
+      <Link
+        href="/recruiter-hub"
+        variant="solid"
+        color="link"
+        size="large"
+        rounded="full"
+      >
         Recruiter Hub
-      </Button>
+      </Link>
     </div>
   </Container>
 );
