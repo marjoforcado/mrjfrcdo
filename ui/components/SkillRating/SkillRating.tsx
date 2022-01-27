@@ -1,3 +1,4 @@
+import { Text } from "..";
 import styles from "./styles.module.scss";
 
 type PropsType = {
@@ -10,7 +11,9 @@ const SkillRating = (props: PropsType) => {
 
   return (
     <div>
-      <h1 className={styles["title"]}>{title}</h1>
+      <Text size="lg" color="loud" weight="bold">
+        {title}
+      </Text>
       {[1, 2, 3, 4, 5].map((index) => {
         if (index <= rating) {
           return (
