@@ -166,7 +166,13 @@ const Skills = () => (
 const RecruiterHub = () => (
   <Container centerHorizontal>
     <div className={styles["recruiter__flex"]}>
-      <Text align="center" size="sm" weight="semibold" leading="snug">
+      <Text
+        align="center"
+        size="sm"
+        weight="semibold"
+        leading="snug"
+        color="loud"
+      >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, enim.
         Quibusdam architecto quisquam, numquam non dolor nulla quidem corrupti
         vel.
