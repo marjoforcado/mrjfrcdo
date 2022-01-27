@@ -13,6 +13,7 @@ type PropsType = {
   decoration?: "none" | "underline";
   decorationColor?: "primary" | "link";
   decorationSize?: 4;
+  marginBottom?: 5;
 };
 
 const Text = (props: PropsType) => {
@@ -26,6 +27,7 @@ const Text = (props: PropsType) => {
     decoration = "none",
     decorationColor = null,
     decorationSize = null,
+    marginBottom = null,
   } = props;
 
   return createElement(
@@ -42,6 +44,7 @@ const Text = (props: PropsType) => {
             decorationColor && decoration !== "none",
           [styles[`decoration-size--${decorationSize}`]]:
             decorationSize && decoration !== "none",
+          [styles[`margin-bottom--${marginBottom}`]]: marginBottom !== null,
         }
       ),
     },

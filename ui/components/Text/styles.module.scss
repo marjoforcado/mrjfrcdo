@@ -83,3 +83,9 @@
     @apply leading-normal;
   }
 }
+
+.margin-bottom {
+  &--5 {
+    @apply mb-5;
+  }
+}

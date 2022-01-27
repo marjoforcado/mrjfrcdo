@@ -85,7 +85,7 @@ const Introduction = () => (
 
 const Experience = () => (
   <Container centerHorizontal>
-    <Text component="h1" color="loud" weight="bold" size="2xl">
+    <Text component="h1" color="loud" weight="bold" size="2xl" marginBottom={5}>
       Experience
     </Text>
     <div className={classNames(styles["section"], styles["section--gap-5"])}>
@@ -123,7 +123,7 @@ const Experience = () => (
 
 const Skills = () => (
   <Container centerHorizontal>
-    <Text component="h1" color="loud" weight="bold" size="2xl">
+    <Text component="h1" color="loud" weight="bold" size="2xl" marginBottom={5}>
       Skills
     </Text>
     <SkillRating title="Docker" rating={4} />
