@@ -1,4 +1,10 @@
-import { Container, ExperienceCard, SkillRating, Text } from "../ui/components";
+import {
+  Button,
+  Container,
+  ExperienceCard,
+  SkillRating,
+  Text,
+} from "../ui/components";
 import { NextPageWithLayout } from "./_app";
 import classNames from "classnames";
 
@@ -6,7 +12,9 @@ import styles from "./styles.module.scss";
 
 const Actions = () => (
   <div className={styles["actions__container"]}>
-    <button className={styles["actions__btn"]}>Download CV</button>
+    <Button rounded="full" variant="solid">
+      Download CV
+    </Button>
     <svg
       className={styles["actions__icon"]}
       viewBox="0 0 24 24"

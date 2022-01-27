@@ -1,19 +1,32 @@
+import classNames from "classnames";
+
 import styles from "./styles.module.scss";
 
 type PropsType = {
-  children: any;
-  clipRight?: JSX.Element;
-  clipLeft?: JSX.Element;
+  children: string;
+  variant?: "outlined" | "solid";
+  color?: "primary" | "secondary" | "link" | "quiet" | "loud";
+  rounded?: "none" | "full";
 };
 
 const Button = (props: PropsType) => {
-  const { children, clipRight, clipLeft } = props;
+  const {
+    children,
+    variant = "outlined",
+    color = "primary",
+    rounded = "none",
+  } = props;
 
   return (
-    <button className={styles["btn"]}>
-      {clipLeft && <span>{clipLeft}</span>}
-      <span>{children}</span>
-      {clipRight && <span>{clipRight}</span>}
+    <button
+      className={classNames(
+        styles["btn"],
+        styles[`variant--${variant}`],
+        styles[`color--${color}`],
+        styles[`rounded--${rounded}`]
+      )}
+    >
+      {children}
     </button>
   );
 };

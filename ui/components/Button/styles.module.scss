@@ -1,3 +1,61 @@
 .btn {
-  @apply rounded-lg border w-auto px-3 py-2 flex space-x-1 items-center bg-white;
+  @apply py-2 px-3 font-semibold;
+}
+
+.rounded {
+  &--none {
+    @apply rounded-none;
+  }
+
+  &--full {
+    @apply rounded-full;
+  }
+}
+
+.variant {
+  &--outlined {
+    @apply border;
+
+    &.color--primary {
+      @apply border-primary text-primary;
+    }
+
+    &.color--secondary {
+      @apply border-secondary text-secondary;
+    }
+
+    &.color--quiet {
+      @apply border-quiet text-quiet;
+    }
+
+    &.color--loud {
+      @apply border-loud text-loud;
+    }
+
+    &.color--link {
+      @apply border-link text-link;
+    }
+  }
+
+  &--solid {
+    &.color--primary {
+      @apply bg-primary text-loud;
+    }
+
+    &.color--secondary {
+      @apply bg-secondary text-loud;
+    }
+
+    &.color--quiet {
+      @apply bg-quiet text-secondary;
+    }
+
+    &.color--loud {
+      @apply bg-loud text-secondary;
+    }
+
+    &.color--link {
+      @apply bg-link text-loud;
+    }
+  }
 }
