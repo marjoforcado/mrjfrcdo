@@ -7,6 +7,7 @@ type PropsType = {
   variant?: "outlined" | "solid";
   color?: "primary" | "secondary" | "link" | "quiet" | "loud";
   rounded?: "none" | "full";
+  size?: "normal" | "large";
 };
 
 const Button = (props: PropsType) => {
@@ -15,6 +16,7 @@ const Button = (props: PropsType) => {
     variant = "outlined",
     color = "primary",
     rounded = "none",
+    size = "normal",
   } = props;
 
   return (
@@ -23,7 +25,8 @@ const Button = (props: PropsType) => {
         styles["btn"],
         styles[`variant--${variant}`],
         styles[`color--${color}`],
-        styles[`rounded--${rounded}`]
+        styles[`rounded--${rounded}`],
+        styles[`size--${size}`]
       )}
     >
       {children}

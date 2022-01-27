@@ -7,13 +7,14 @@ type PropsType = {
   children: any;
   component?: "p" | "span" | "h1";
   color?: "primary" | "secondary" | "link" | "quiet" | "loud";
-  weight?: "normal" | "black" | "bold";
+  weight?: "normal" | "black" | "bold" | "semibold";
   size?: "base" | "2xl" | "sm" | "lg" | "xs";
   leading?: "none" | "tight" | "normal" | "snug";
   decoration?: "none" | "underline";
   decorationColor?: "primary" | "link";
   decorationSize?: 4;
   marginBottom?: 5 | 4 | 3;
+  align?: "left" | "right" | "center" | "justify";
 };
 
 const Text = (props: PropsType) => {
@@ -28,6 +29,7 @@ const Text = (props: PropsType) => {
     decorationColor = null,
     decorationSize = null,
     marginBottom = null,
+    align = "left",
   } = props;
 
   return createElement(
@@ -39,6 +41,7 @@ const Text = (props: PropsType) => {
         styles[`size--${size}`],
         styles[`leading--${leading}`],
         styles[`decoration--${decoration}`],
+        styles[`align--${align}`],
         {
           [styles[`decoration-color--${decorationColor}`]]:
             decorationColor && decoration !== "none",

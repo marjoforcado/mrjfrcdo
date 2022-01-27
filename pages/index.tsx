@@ -163,11 +163,27 @@ const Skills = () => (
   </Container>
 );
 
+const RecruiterHub = () => (
+  <Container centerHorizontal>
+    <div className={styles["recruiter__flex"]}>
+      <Text align="center" size="sm" weight="semibold" leading="snug">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, enim.
+        Quibusdam architecto quisquam, numquam non dolor nulla quidem corrupti
+        vel.
+      </Text>
+      <Button rounded="full" variant="solid" color="link" size="large">
+        Recruiter Hub
+      </Button>
+    </div>
+  </Container>
+);
+
 const IndexPage: NextPageWithLayout = () => (
   <>
     <Introduction />
     <Experience />
     <Skills />
+    <RecruiterHub />
   </>
 );
 
