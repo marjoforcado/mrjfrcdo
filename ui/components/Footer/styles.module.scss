@@ -1,3 +1,15 @@
 .footer {
-  @apply bg-neutral-800;
+  @apply bg-rose-800;
+}
+
+.title {
+  @apply font-bold text-neutral-800;
+}
+
+.links {
+  @apply text-stone-300;
+}
+
+.sub-footer {
+  @apply bg-rose-900;
 }
