@@ -11,23 +11,23 @@
 }
 
 .title {
-  @apply text-2xl text-stone-300 font-bold mb-5;
+  @apply text-2xl text-loud font-bold mb-5;
 }
 
 .introduction__greetings {
-  @apply text-stone-300 font-black text-2xl leading-tight;
+  @apply text-loud font-black text-2xl leading-tight;
 }
 
 .introduction__full-name {
-  @apply text-rose-800 underline decoration-rose-800 decoration-4;
+  @apply text-primary underline decoration-primary decoration-4;
 }
 
 .introduction__blinker {
-  @apply text-stone-300 animate-blink;
+  @apply text-loud animate-blink;
 }
 
 .introduction__description {
-  @apply text-sm text-stone-400 leading-normal;
+  @apply text-sm text-quiet leading-normal;
 }
 
 .actions__container {
@@ -35,9 +35,9 @@
 }
 
 .actions__btn {
-  @apply py-2 px-3 rounded-full border text-stone-400;
+  @apply py-2 px-3 rounded-full border text-loud;
 }
 
 .actions__icon {
-  @apply text-stone-300 w-6 h-6 inline;
+  @apply text-loud w-6 h-6 inline;
 }

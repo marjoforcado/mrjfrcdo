@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -5,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: colors.rose["800"],
+        secondary: colors.neutral["900"],
+        loud: colors.stone["300"],
+        quiet: colors.stone["400"],
+        link: colors.sky["500"],
+      },
       fontFamily: {
         "roboto-slab": "'Roboto Slab', serif",
         "courier-prime": "'Courier Prime', monospace",

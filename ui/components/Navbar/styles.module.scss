@@ -3,7 +3,7 @@
 }
 
 .brand {
-  @apply text-stone-300 font-black text-lg;
+  @apply text-loud font-black text-lg;
 }
 
 .content {
@@ -14,16 +14,16 @@
   @apply flex flex-col py-16 h-[calc(theme(height.screen)_-_theme(height.20))] justify-between items-center;
 
   & > li {
-    @apply text-neutral-900 font-black text-2xl;
+    @apply text-secondary font-black text-2xl;
   }
 }
 
 .icons {
-  @apply text-stone-300 h-7 w-7;
+  @apply text-loud h-7 w-7;
 }
 
 .dropdown {
-  @apply bg-stone-300 absolute w-full overflow-hidden h-0 transition-all duration-700 ease-in-out;
+  @apply bg-loud absolute w-full overflow-hidden h-0 transition-all duration-700 ease-in-out;
 
   &--is-toggled {
     @apply h-[calc(theme(height.screen)_-_theme(height.20))];
@@ -35,5 +35,5 @@
 }
 
 .wrapper {
-  @apply sticky top-0 bg-neutral-900;
+  @apply sticky top-0 bg-secondary;
 }
