@@ -1,9 +1,85 @@
-.font-face {
-  &--roboto-slab {
-    @apply font-roboto-slab;
+.color {
+  &--primary {
+    @apply text-primary;
   }
 
-  &--courier-prime {
-    @apply font-courier-prime;
+  &--secondary {
+    @apply text-secondary;
+  }
+
+  &--quiet {
+    @apply text-quiet;
+  }
+
+  &--loud {
+    @apply text-loud;
+  }
+
+  &--link {
+    @apply text-link;
+  }
+}
+
+.weight {
+  &--normal {
+    @apply font-normal;
+  }
+
+  &--black {
+    @apply font-black;
+  }
+
+  &--bold {
+    @apply font-bold;
+  }
+}
+
+.size {
+  &--base {
+    @apply text-base;
+  }
+
+  &--2xl {
+    @apply text-2xl;
+  }
+
+  &--sm {
+    @apply text-sm;
+  }
+}
+
+.decoration {
+  &--none {
+    @apply no-underline;
+  }
+
+  &--underline {
+    @apply underline;
+  }
+}
+
+.decoration-color {
+  &--primary {
+    @apply decoration-primary;
+  }
+
+  &--link {
+    @apply decoration-link;
+  }
+}
+
+.decoration-size {
+  &--4 {
+    @apply decoration-4;
+  }
+}
+
+.leading {
+  &--none {
+    @apply leading-none;
+  }
+
+  &--normal {
+    @apply leading-normal;
   }
 }

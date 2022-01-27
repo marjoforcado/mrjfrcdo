@@ -10,24 +10,8 @@
   }
 }
 
-.title {
-  @apply text-2xl text-loud font-bold mb-5;
-}
-
-.introduction__greetings {
-  @apply text-loud font-black text-2xl leading-tight;
-}
-
-.introduction__full-name {
-  @apply text-primary underline decoration-primary decoration-4;
-}
-
 .introduction__blinker {
   @apply text-loud animate-blink;
-}
-
-.introduction__description {
-  @apply text-sm text-quiet leading-normal;
 }
 
 .actions__container {

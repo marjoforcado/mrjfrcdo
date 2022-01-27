@@ -3,13 +3,17 @@
 }
 
 .title {
-  @apply font-bold text-secondary;
+  @apply text-sm font-bold text-secondary;
 }
 
-.links {
-  @apply text-loud;
+.links > li {
+  @apply text-loud text-sm;
 }
 
 .sub-footer {
   @apply bg-rose-900;
+}
+
+.last-update {
+  @apply text-sm;
 }

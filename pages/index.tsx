@@ -1,4 +1,4 @@
-import { Container, ExperienceCard, SkillRating } from "../ui/components";
+import { Container, ExperienceCard, SkillRating, Text } from "../ui/components";
 import { NextPageWithLayout } from "./_app";
 import classNames from "classnames";
 
@@ -57,17 +57,27 @@ const Actions = () => (
 const Introduction = () => (
   <Container centerHorizontal>
     <div className={classNames(styles["section"], styles["section--gap-3"])}>
-      <p className={styles["introduction__greetings"]}>
+      <Text color="loud" weight="black" size="2xl" leading="tight">
         Hi, I&apos;m{" "}
-        <span className={styles["introduction__full-name"]}>Marjo Forcado</span>{" "}
+        <Text
+          component="span"
+          color="primary"
+          decoration="underline"
+          decorationColor="primary"
+          decorationSize={4}
+          size="2xl"
+          weight="black"
+        >
+          Marjo Forcado
+        </Text>{" "}
         a Fullstack Javascript Engineer.{" "}
         <span className={styles["introduction__blinker"]}>|</span>
-      </p>
-      <p className={styles["introduction__description"]}>
+      </Text>
+      <Text size="sm" color="quiet" leading="normal">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum velit
         eveniet aliquam iure non vitae reprehenderit, delectus voluptatibus
         quisquam illum.
-      </p>
+      </Text>
       <Actions />
     </div>
   </Container>
@@ -75,7 +85,9 @@ const Introduction = () => (
 
 const Experience = () => (
   <Container centerHorizontal>
-    <h1 className={styles["title"]}>Experience</h1>
+    <Text component="h1" color="loud" weight="bold" size="2xl">
+      Experience
+    </Text>
     <div className={classNames(styles["section"], styles["section--gap-5"])}>
       <ExperienceCard
         title="FFUF Manila Inc."
@@ -111,7 +123,9 @@ const Experience = () => (
 
 const Skills = () => (
   <Container centerHorizontal>
-    <h1 className={styles["title"]}>Skills</h1>
+    <Text component="h1" color="loud" weight="bold" size="2xl">
+      Skills
+    </Text>
     <SkillRating title="Docker" rating={4} />
     <SkillRating title="Javascript" rating={5} />
     <SkillRating title="CSS" rating={3} />

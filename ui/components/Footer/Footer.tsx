@@ -24,7 +24,7 @@ const Footer = () => (
     </Container>
     <div className={styles["sub-footer"]}>
       <Container>
-        <p>Last Update Jan 2020</p>
+        <p className={styles["last-update"]}>Last Update Jan 2020</p>
       </Container>
     </div>
   </footer>
