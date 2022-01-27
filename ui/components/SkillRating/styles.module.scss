@@ -1,3 +1,11 @@
 .rating {
   @apply w-5 h-5 text-primary inline;
 }
+
+.rating-flex {
+  @apply flex gap-1;
+}
+
+.wrapper {
+  @apply flex flex-col gap-2;
+}
