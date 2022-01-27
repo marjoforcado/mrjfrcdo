@@ -1,30 +1,33 @@
-import { Container } from "..";
+import { Container, Text } from "..";
 
 import styles from "./styles.module.scss";
 
 const Footer = () => (
   <footer className={styles["footer"]}>
     <Container centerHorizontal>
-      <div>
-        <p className={styles["title"]}>Site Map</p>
-        <ul className={styles["links"]}>
-          <li>About</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Blog</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div>
-        <p className={styles["title"]}>Other Links</p>
-        <ul className={styles["links"]}>
-          <li>Site Update</li>
-        </ul>
-      </div>
+      <Text color="secondary" size="sm" weight="bold">
+        Site Map
+      </Text>
+      <ul className={styles["links"]}>
+        <li>About</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+      <Text color="secondary" size="sm" weight="bold">
+        Other Links
+      </Text>
+      <ul className={styles["links"]}>
+        <li>Site Update</li>
+        <li>Recruiter Hub</li>
+      </ul>
     </Container>
     <div className={styles["sub-footer"]}>
       <Container>
-        <p className={styles["last-update"]}>Last Update Jan 2020</p>
+        <Text size="sm" color="secondary">
+          Last Update Jan 2022
+        </Text>
       </Container>
     </div>
   </footer>

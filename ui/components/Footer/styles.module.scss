@@ -2,18 +2,10 @@
   @apply bg-primary;
 }
 
-.title {
-  @apply text-sm font-bold text-secondary;
-}
-
 .links > li {
   @apply text-loud text-sm;
 }
 
 .sub-footer {
   @apply bg-rose-900;
-}
-
-.last-update {
-  @apply text-sm;
 }
