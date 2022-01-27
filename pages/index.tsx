@@ -1,4 +1,4 @@
-import { Container, ExperienceCard } from "../ui/components";
+import { Container, ExperienceCard, SkillRating } from "../ui/components";
 import { NextPageWithLayout } from "./_app";
 
 import styles from "./styles.module.scss";
@@ -98,6 +98,11 @@ const IndexPage: NextPageWithLayout = () => (
           iusto harum vel quam ex nemo magni. Sed consequatur facilis facere"
         />
       </div>
+    </Container>
+    <Container centerHorizontal>
+      <SkillRating title="Docker" rating={4} />
+      <SkillRating title="Javascript" rating={5} />
+      <SkillRating title="CSS" rating={3} />
     </Container>
   </>
 );
