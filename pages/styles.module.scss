@@ -1,35 +1,43 @@
-.greetings {
+.section {
+  @apply flex flex-col;
+
+  &--gap-3 {
+    @apply gap-3;
+  }
+
+  &--gap-5 {
+    @apply gap-5;
+  }
+}
+
+.title {
+  @apply text-2xl text-stone-300 font-bold mb-5;
+}
+
+.introduction__greetings {
   @apply text-stone-300 font-black text-2xl leading-tight;
 }
 
-.highlight-red {
+.introduction__full-name {
   @apply text-rose-800 underline decoration-rose-800 decoration-4;
 }
 
-.description {
-  @apply text-sm text-stone-400 leading-normal;
-}
-
-.download-btn {
-  @apply py-2 px-3 rounded-full border text-stone-400;
-}
-
-.section-1 {
-  @apply flex flex-col gap-3;
-}
-
-.section-2 {
-  @apply flex flex-col gap-5;
-}
-
-.blinker {
+.introduction__blinker {
   @apply text-stone-300 animate-blink;
 }
 
-.icon {
-  @apply text-stone-300 w-6 h-6 inline;
+.introduction__description {
+  @apply text-sm text-stone-400 leading-normal;
 }
 
-.actions-container {
+.actions__container {
   @apply flex gap-2 items-center;
+}
+
+.actions__btn {
+  @apply py-2 px-3 rounded-full border text-stone-400;
+}
+
+.actions__icon {
+  @apply text-stone-300 w-6 h-6 inline;
 }
