@@ -25,3 +25,15 @@
 .actions__icon {
   @apply text-loud w-6 h-6 inline;
 }
+
+.rating-grid__wrapper {
+  @apply flex flex-col gap-4;
+}
+
+.rating-grid__grid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.skills__wrapper {
+  @apply flex flex-col gap-4;
+}

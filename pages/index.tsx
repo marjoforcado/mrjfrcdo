@@ -121,14 +121,37 @@ const Experience = () => (
   </Container>
 );
 
+const RatingGrid = ({ title, children }: { title: string; children: any }) => (
+  <div className={styles["rating-grid__wrapper"]}>
+    <Text component="h1" color="loud" weight="bold" size="2xl">
+      {title}
+    </Text>
+    <div className={styles["rating-grid__grid"]}>{children}</div>
+  </div>
+);
+
 const Skills = () => (
   <Container centerHorizontal>
-    <Text component="h1" color="loud" weight="bold" size="2xl" marginBottom={4}>
-      Skills
-    </Text>
-    <SkillRating title="Docker" rating={4} />
-    <SkillRating title="Javascript" rating={5} />
-    <SkillRating title="CSS" rating={3} />
+    <div className={styles["skills__wrapper"]}>
+      <RatingGrid title="Skills">
+        <SkillRating title="HTML" rating={5} />
+        <SkillRating title="CSS" rating={5} />
+        <SkillRating title="Javascript" rating={3} />
+        <SkillRating title="Database" rating={3} />
+        <SkillRating title="Docker" rating={3} />
+        <SkillRating title="AWS" rating={3} />
+      </RatingGrid>
+      <RatingGrid title="Libraries">
+        <SkillRating title="React" rating={5} />
+        <SkillRating title="NextJs" rating={5} />
+        <SkillRating title="NodeJs" rating={5} />
+        <SkillRating title="NestJs" rating={3} />
+        <SkillRating title="Prisma" rating={3} />
+        <SkillRating title="GraphQL" rating={3} />
+        <SkillRating title="React Native" rating={3} />
+        <SkillRating title="Tailwind" rating={5} />
+      </RatingGrid>
+    </div>
   </Container>
 );
 
