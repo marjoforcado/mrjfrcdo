@@ -1,4 +1,4 @@
-import { Card } from "..";
+import { Card, Text } from "..";
 
 import styles from "./styles.module.scss";
 
@@ -15,16 +15,21 @@ const ExperienceCard = (props: PropsType) => {
   return (
     <Card>
       <Card.Header>
-        <h1 className={styles["title"]}>{title}</h1>
-        <p className={styles["position"]}>
-          {position} |<span className={styles["duration"]}>{duration}</span>
-        </p>
+        <Text component="h1" size="lg" weight="black" color="primary">
+          {title}
+        </Text>
+        <Text size="sm" weight="bold" color="loud">
+          {position} |{" "}
+          <Text component="span" size="xs" weight="bold" color="loud">
+            {duration}
+          </Text>
+        </Text>
       </Card.Header>
       <Card.Content>
-        <p className={styles["description"]}>
+        <Text size="sm" color="quiet" leading="snug">
           {description}...
           <a className={styles["read-more"]}>Read more</a>
-        </p>
+        </Text>
       </Card.Content>
     </Card>
   );

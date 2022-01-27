@@ -8,8 +8,8 @@ type PropsType = {
   component?: "p" | "span" | "h1";
   color?: "primary" | "secondary" | "link" | "quiet" | "loud";
   weight?: "normal" | "black" | "bold";
-  size?: "base" | "2xl" | "sm" | "lg";
-  leading?: "none" | "tight" | "normal";
+  size?: "base" | "2xl" | "sm" | "lg" | "xs";
+  leading?: "none" | "tight" | "normal" | "snug";
   decoration?: "none" | "underline";
   decorationColor?: "primary" | "link";
   decorationSize?: 4;

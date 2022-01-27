@@ -1,19 +1,3 @@
-.title {
-  @apply text-lg font-black text-primary;
-}
-
-.description {
-  @apply text-sm text-quiet leading-snug ml-1;
-}
-
-.position {
-  @apply text-sm font-bold text-loud mb-2;
-}
-
-.duration {
-  @apply text-xs ml-1;
-}
-
 .read-more {
   @apply text-xs font-bold underline text-link;
 }

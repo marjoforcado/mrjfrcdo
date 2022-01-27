@@ -50,6 +50,10 @@
   &--lg {
     @apply text-lg;
   }
+
+  &--xs {
+    @apply text-xs;
+  }
 }
 
 .decoration {
@@ -85,6 +89,10 @@
 
   &--normal {
     @apply leading-normal;
+  }
+
+  &--snug {
+    @apply leading-snug;
   }
 }
 

@@ -2,7 +2,7 @@
   @apply border-l-4 border-primary;
 
   & > .content,
-  & > .header:only-child,
+  & > .header:only-child:first-child,
   & > .header {
     @apply p-3;
   }
@@ -12,6 +12,6 @@
   }
 
   & > .header + .content {
-    @apply pt-0;
+    @apply pt-3;
   }
 }
