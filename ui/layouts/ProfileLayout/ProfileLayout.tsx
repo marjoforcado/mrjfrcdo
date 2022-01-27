@@ -1,4 +1,4 @@
-import { Navbar } from "../../components";
+import { Footer, Navbar } from "../../components";
 
 import styles from "./styles.module.scss";
 
@@ -13,6 +13,7 @@ const ProfileLayout = (props: PropsType) => {
     <>
       <Navbar />
       <main>{children}</main>
+      <Footer />
     </>
   );
 };
