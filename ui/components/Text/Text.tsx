@@ -13,7 +13,7 @@ type PropsType = {
   decoration?: "none" | "underline";
   decorationColor?: "primary" | "link";
   decorationSize?: 4;
-  marginBottom?: 5 | 4;
+  marginBottom?: 5 | 4 | 3;
 };
 
 const Text = (props: PropsType) => {

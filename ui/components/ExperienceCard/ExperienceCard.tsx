@@ -15,7 +15,13 @@ const ExperienceCard = (props: PropsType) => {
   return (
     <Card>
       <Card.Header>
-        <Text component="h1" size="lg" weight="black" color="primary">
+        <Text
+          component="h1"
+          size="lg"
+          weight="black"
+          color="primary"
+          marginBottom={3}
+        >
           {title}
         </Text>
         <Text size="sm" weight="bold" color="loud">
