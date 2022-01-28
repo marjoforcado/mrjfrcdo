@@ -5,9 +5,9 @@ import styles from "./styles.module.scss";
 
 export type PropsType = {
   children: string;
-  variant?: "outlined" | "solid";
+  variant?: "outlined" | "solid" | "text";
   color?: "primary" | "secondary" | "link" | "quiet" | "loud";
-  rounded?: "none" | "full";
+  rounded?: "none" | "full" | "sm" | "md" | "lg";
   size?: "normal" | "large";
   component?: "button" | "a";
   href?: string;

@@ -20,6 +20,18 @@
   &--full {
     @apply rounded-full;
   }
+
+  &--sm {
+    @apply rounded-sm;
+  }
+
+  &--md {
+    @apply rounded-md;
+  }
+
+  &--lg {
+    @apply rounded-lg;
+  }
 }
 
 .variant {
@@ -66,6 +78,28 @@
 
     &.color--link {
       @apply bg-link text-loud;
+    }
+  }
+
+  &--text {
+    &.color--primary {
+      @apply text-primary;
+    }
+
+    &.color--secondary {
+      @apply text-secondary;
+    }
+
+    &.color--quiet {
+      @apply text-quiet;
+    }
+
+    &.color--loud {
+      @apply text-loud;
+    }
+
+    &.color--link {
+      @apply text-link;
     }
   }
 }
