@@ -6,7 +6,6 @@ import {
   SkillRating,
   Text,
 } from "../ui/components";
-import { NextPageWithLayout } from "./_app";
 import classNames from "classnames";
 
 import styles from "./styles.module.scss";
@@ -191,7 +190,7 @@ const RecruiterHub = () => (
   </Container>
 );
 
-const IndexPage: NextPageWithLayout = () => (
+const IndexPage = () => (
   <>
     <Introduction />
     <Experience />
@@ -199,7 +198,5 @@ const IndexPage: NextPageWithLayout = () => (
     <RecruiterHub />
   </>
 );
-
-IndexPage.layout = "profile";
 
 export default IndexPage;

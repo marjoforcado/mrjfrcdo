@@ -1,14 +1,14 @@
-import { Container } from "../../ui/components";
-import { NextPageWithLayout } from "../_app";
+import { Container, Input, Text } from "../../ui/components";
 
 import styles from "./styles.module.scss";
 
-const IndexPage: NextPageWithLayout = () => (
+const IndexPage = () => (
   <Container>
-    <div>Recruiter Hub</div>
+    <Text size="xs" weight="black" color="link" marginBottom={3} align="center">
+      Enter Magic String
+    </Text>
+    <Input />
   </Container>
 );
-
-IndexPage.layout = "profile";
 
 export default IndexPage;

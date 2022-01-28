@@ -4,6 +4,7 @@ import Container from "./Container";
 import ExperienceCard from "./ExperienceCard";
 import FlexBox from "./FlexBox";
 import Footer from "./Footer";
+import Input from "./Input";
 import Link from "./Link";
 import Navbar from "./Navbar";
 import SkillRating from "./SkillRating";
@@ -16,6 +17,7 @@ export {
   ExperienceCard,
   FlexBox,
   Footer,
+  Input,
   Link,
   Navbar,
   SkillRating,

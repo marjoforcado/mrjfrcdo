@@ -15,13 +15,6 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const { layout } = Component;
 
   switch (layout) {
-    case "default": {
-      return (
-        <DefaultLayout>
-          <Component {...pageProps} />
-        </DefaultLayout>
-      );
-    }
     case "profile": {
       return (
         <ProfileLayout>
@@ -30,7 +23,11 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       );
     }
     default: {
-      return <Component {...pageProps} />;
+      return (
+        <DefaultLayout>
+          <Component {...pageProps} />
+        </DefaultLayout>
+      );
     }
   }
 }
