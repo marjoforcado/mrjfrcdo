@@ -6,13 +6,7 @@ const IndexPage = () => (
   <Container>
     <div className={styles["magic-form__flex"]}>
       <div className={styles["magic-form__content"]}>
-        <Text
-          size="xs"
-          weight="black"
-          color="loud"
-          marginBottom={3}
-          align="center"
-        >
+        <Text size="xs" weight="black" color="loud" align="center">
           Enter Magic String
         </Text>
         <Input />
