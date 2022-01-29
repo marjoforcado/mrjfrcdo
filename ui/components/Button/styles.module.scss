@@ -4,11 +4,15 @@
 
 .size {
   &--normal {
-    @apply py-2 px-3;
+    @apply py-2 px-3 text-base;
   }
 
   &--large {
-    @apply py-4 px-3;
+    @apply py-4 px-3 text-lg;
+  }
+
+  &--small {
+    @apply py-1 px-3 text-sm;
   }
 }
 

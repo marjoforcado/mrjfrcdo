@@ -6,6 +6,7 @@ import FlexBox from "./FlexBox";
 import Footer from "./Footer";
 import Input from "./Input";
 import Link from "./Link";
+import Modal from "./Modal";
 import Navbar from "./Navbar";
 import SkillRating from "./SkillRating";
 import Text from "./Text";
@@ -19,6 +20,7 @@ export {
   Footer,
   Input,
   Link,
+  Modal,
   Navbar,
   SkillRating,
   Text,

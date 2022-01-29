@@ -1,0 +1,35 @@
+.backdrop {
+  @apply fixed h-full w-full bg-secondary bg-opacity-60 z-10 top-0 left-0;
+}
+
+.container {
+  @apply fixed h-40 w-full left-0 top-1/3;
+}
+
+.modal {
+  @apply bg-loud rounded-lg border-primary border-2;
+}
+
+.wrapper {
+  @apply flex flex-col gap-4;
+}
+
+.header {
+  @apply flex justify-between items-center;
+
+  &__actions {
+    @apply flex gap-1;
+  }
+
+  &__icon {
+    @apply w-5 h-5 text-primary;
+  }
+
+  &__title {
+    @apply text-lg font-semibold text-primary;
+  }
+}
+
+.footer {
+  @apply flex justify-end;
+}

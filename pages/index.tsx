@@ -3,6 +3,7 @@ import {
   Container,
   ExperienceCard,
   Link,
+  Modal,
   SkillRating,
   Text,
 } from "../ui/components";
@@ -196,6 +197,7 @@ const IndexPage = () => (
     <Experience />
     <Skills />
     <RecruiterHub />
+    <Modal />
   </>
 );
 

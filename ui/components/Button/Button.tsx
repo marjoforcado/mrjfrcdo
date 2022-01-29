@@ -8,7 +8,7 @@ export type PropsType = {
   variant?: "outlined" | "solid" | "text";
   color?: "primary" | "secondary" | "link" | "quiet" | "loud";
   rounded?: "none" | "full" | "sm" | "md" | "lg";
-  size?: "normal" | "large";
+  size?: "normal" | "large" | "small";
   component?: "button" | "a";
   href?: string;
 };
