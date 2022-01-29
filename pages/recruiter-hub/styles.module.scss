@@ -1,0 +1,4 @@
+.container {
+  // Navbar height - Footer height - Container paddingY
+  @apply h-[calc(theme(height.screen)_-_theme(height.20)_-_theme(height.52)_-_theme(height.8))] flex items-center;
+}

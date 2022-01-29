@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 const Footer = () => (
   <footer className={styles["footer"]}>
-    <Container centerHorizontal>
+    {/* <Container centerHorizontal>
       <Text color="secondary" size="sm" weight="bold">
         Site Map
       </Text>
@@ -29,7 +29,7 @@ const Footer = () => (
           Last Update Jan 2022
         </Text>
       </Container>
-    </div>
+    </div> */}
   </footer>
 );
 
