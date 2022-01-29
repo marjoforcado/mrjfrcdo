@@ -1,5 +1,7 @@
 import { Footer, Navbar } from "../../components";
 
+import styles from "./styles.module.scss";
+
 type PropsType = {
   children: any;
 };
@@ -10,8 +12,10 @@ const DefaultLayout = (props: PropsType) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
-      <Footer />
+      <div className={styles["container"]}>
+        <main>{children}</main>
+        <Footer />
+      </div>
     </>
   );
 };

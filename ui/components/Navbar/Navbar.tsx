@@ -17,14 +17,6 @@ const Navbar = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isClickedOutside]);
 
-  useEffect(() => {
-    if (isDropdownToggled) {
-      document.body.classList.add("nav-dropdown-toggled");
-    } else {
-      document.body.classList.remove("nav-dropdown-toggled");
-    }
-  }, [isDropdownToggled]);
-
   return (
     <div className={styles["wrapper"]} ref={wrapperRef}>
       <nav className={styles["nav"]}>
