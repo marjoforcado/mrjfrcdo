@@ -1,0 +1,3 @@
+.container {
+  @apply overflow-y-auto h-[calc(theme(height.screen)_-_theme(height.20))];
+}

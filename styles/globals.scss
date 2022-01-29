@@ -7,6 +7,10 @@ body {
   @apply bg-secondary;
 }
 
+body {
+  @apply overflow-y-hidden;
+}
+
 body.nav-dropdown-toggled {
   @apply overflow-hidden;
 }
