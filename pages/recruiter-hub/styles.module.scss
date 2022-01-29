@@ -1,4 +1,12 @@
-.container {
+.magic-form__flex {
   // Navbar height - Footer height - Container paddingY
   @apply h-[calc(theme(height.screen)_-_theme(height.20)_-_theme(height.52)_-_theme(height.8))] flex items-center;
+}
+
+.magic-form__content {
+  @apply flex flex-col gap-4;
+}
+
+.magic-form__footer {
+  @apply flex justify-center gap-2;
 }

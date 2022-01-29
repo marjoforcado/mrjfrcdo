@@ -4,8 +4,8 @@ import styles from "./styles.module.scss";
 
 const IndexPage = () => (
   <Container>
-    <div className={styles["container"]}>
-      <div>
+    <div className={styles["magic-form__flex"]}>
+      <div className={styles["magic-form__content"]}>
         <Text
           size="xs"
           weight="black"
@@ -20,12 +20,14 @@ const IndexPage = () => (
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
           laudantium!
         </Text>
-        <Button variant="solid" rounded="md">
-          Generate
-        </Button>
-        <Link href="/" color="link" variant="text">
-          Go Back
-        </Link>
+        <div className={styles["magic-form__footer"]}>
+          <Button variant="solid" rounded="md">
+            Generate Code
+          </Button>
+          <Link href="/" color="link" variant="text">
+            Go Back
+          </Link>
+        </div>
       </div>
     </div>
   </Container>
