@@ -11,6 +11,7 @@ export type PropsType = {
   size?: "normal" | "large" | "small";
   component?: "button" | "a";
   href?: string;
+  onClick?: () => void;
 };
 
 const Button = (props: PropsType) => {
@@ -22,6 +23,7 @@ const Button = (props: PropsType) => {
     size = "normal",
     component = "button",
     href,
+    onClick = () => {},
   } = props;
 
   return createElement(
@@ -35,6 +37,7 @@ const Button = (props: PropsType) => {
         styles[`size--${size}`]
       ),
       ...(component === "a" && href && { href }),
+      onClick,
     },
     children
   );

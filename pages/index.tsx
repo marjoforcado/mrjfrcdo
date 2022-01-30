@@ -8,12 +8,17 @@ import {
   Text,
 } from "../ui/components";
 import classNames from "classnames";
+import { useState } from "react";
 
 import styles from "./styles.module.scss";
 
-const Actions = () => (
+const Actions = ({
+  setShowModal,
+}: {
+  setShowModal: (showModal: boolean) => void;
+}) => (
   <div className={styles["actions__container"]}>
-    <Button rounded="full" variant="solid">
+    <Button rounded="full" variant="solid" onClick={() => setShowModal(true)}>
       Download CV
     </Button>
     <svg
@@ -63,7 +68,11 @@ const Actions = () => (
   </div>
 );
 
-const Introduction = () => (
+const Introduction = ({
+  setShowModal,
+}: {
+  setShowModal: (showModal: boolean) => void;
+}) => (
   <Container centerHorizontal>
     <div className={classNames(styles["section"], styles["section--gap-3"])}>
       <Text color="loud" weight="black" size="2xl" leading="tight">
@@ -87,7 +96,7 @@ const Introduction = () => (
         eveniet aliquam iure non vitae reprehenderit, delectus voluptatibus
         quisquam illum.
       </Text>
-      <Actions />
+      <Actions setShowModal={setShowModal} />
     </div>
   </Container>
 );
@@ -191,14 +200,18 @@ const RecruiterHub = () => (
   </Container>
 );
 
-const IndexPage = () => (
-  <>
-    <Introduction />
-    <Experience />
-    <Skills />
-    <RecruiterHub />
-    <Modal />
-  </>
-);
+const IndexPage = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  return (
+    <>
+      <Introduction setShowModal={setShowModal} />
+      <Experience />
+      <Skills />
+      <RecruiterHub />
+      <Modal isToggled={showModal} onClose={() => setShowModal(false)} />
+    </>
+  );
+};
 
 export default IndexPage;
