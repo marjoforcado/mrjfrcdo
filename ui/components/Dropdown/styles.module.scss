@@ -7,7 +7,7 @@
 }
 
 .dropdown__ul {
-  @apply font-semibold absolute top-12 p-2 bg-loud rounded-md border border-primary hidden;
+  @apply font-semibold absolute top-12 p-2 bg-loud rounded-md border border-primary hidden z-10;
 
   &--is-toggled {
     @apply block;
