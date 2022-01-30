@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { createElement } from "react";
+import React, { createElement } from "react";
 
 import styles from "./styles.module.scss";
 
@@ -14,7 +14,7 @@ export type PropsType = {
   onClick?: () => void;
 };
 
-const Button = (props: PropsType) => {
+const Button = React.forwardRef((props: PropsType, ref) => {
   const {
     children,
     variant = "outlined",
@@ -29,6 +29,7 @@ const Button = (props: PropsType) => {
   return createElement(
     component,
     {
+      ref,
       className: classNames(
         styles["btn"],
         styles[`variant--${variant}`],
@@ -41,6 +42,8 @@ const Button = (props: PropsType) => {
     },
     children
   );
-};
+});
+
+Button.displayName = "Button";
 
 export default Button;
