@@ -11,6 +11,7 @@ export type PropsType = {
   size?: "normal" | "large" | "small";
   component?: "button" | "a";
   href?: string;
+  target?: "_blank" | "_self" | "_parent" | "_top" | "framename";
   onClick?: () => void;
 };
 
@@ -23,6 +24,7 @@ const Button = React.forwardRef((props: PropsType, ref) => {
     size = "normal",
     component = "button",
     href,
+    target,
     onClick = () => {},
   } = props;
 
@@ -38,6 +40,7 @@ const Button = React.forwardRef((props: PropsType, ref) => {
         styles[`size--${size}`]
       ),
       ...(component === "a" && href && { href }),
+      ...(component === "a" && target && { target }),
       onClick,
     },
     children

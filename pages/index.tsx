@@ -25,6 +25,7 @@ const Actions = ({
       href="https://www.linkedin.com/in/marjoforcado"
       variant="text"
       size="small"
+      target="_blank"
     >
       <svg
         className={styles["actions__icon"]}
@@ -38,7 +39,12 @@ const Actions = ({
         />
       </svg>
     </Link>
-    <Link href="https://github.com/marjoforcado" variant="text" size="small">
+    <Link
+      href="https://github.com/marjoforcado"
+      variant="text"
+      size="small"
+      target="_blank"
+    >
       <svg
         viewBox="0 0 24 24"
         fill="none"
@@ -51,7 +57,12 @@ const Actions = ({
         />
       </svg>
     </Link>
-    <Link href="mailto:marjoforcado@gmail.com" variant="text" size="small">
+    <Link
+      href="mailto:marjoforcado@gmail.com"
+      variant="text"
+      size="small"
+      target="_blank"
+    >
       <svg
         className={styles["actions__icon"]}
         viewBox="0 0 24 24"
