@@ -1,0 +1,15 @@
+.dropdown__wrapper {
+  @apply inline-block relative;
+}
+
+.dropdown__icon {
+  @apply text-loud h-7 w-7;
+}
+
+.dropdown__ul {
+  @apply font-semibold absolute top-12 p-2 bg-loud rounded-md border border-primary hidden;
+
+  &--is-toggled {
+    @apply block;
+  }
+}

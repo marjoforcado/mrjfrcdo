@@ -4,7 +4,7 @@ import React, { createElement } from "react";
 import styles from "./styles.module.scss";
 
 export type PropsType = {
-  children: string;
+  children: any;
   variant?: "outlined" | "solid" | "text";
   color?: "primary" | "secondary" | "link" | "quiet" | "loud";
   rounded?: "none" | "full" | "sm" | "md" | "lg";

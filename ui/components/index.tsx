@@ -1,6 +1,7 @@
 import Button from "./Button";
 import Card from "./Card";
 import Container from "./Container";
+import Dropdown from "./Dropdown";
 import ExperienceCard from "./ExperienceCard";
 import FlexBox from "./FlexBox";
 import Footer from "./Footer";
@@ -15,6 +16,7 @@ export {
   Button,
   Card,
   Container,
+  Dropdown,
   ExperienceCard,
   FlexBox,
   Footer,

@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { useEffect, useRef, useState } from "react";
-import { Container } from "..";
+import { Button, Container, Dropdown } from "..";
 import { useOutsideClickListener } from "../../hooks";
 
 import styles from "./styles.module.scss";
@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className={styles["content"]}>
             <h1 className={styles["brand"]}>Mrjfrcdo</h1>
             <div className={styles["items-right"]}>
-              <button>
+              {/* <button>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={styles["icons"]}
@@ -39,11 +39,15 @@ const Navbar = () => {
                     d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
                   />
                 </svg>
-              </button>
-              <button onClick={() => setIsDropdownToggled((prev) => !prev)}>
+              </button> */}
+              <Dropdown />
+              <Button
+                variant="text"
+                onClick={() => setIsDropdownToggled((prev) => !prev)}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className={styles["icons"]}
+                  className={styles["icon"]}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -55,7 +59,7 @@ const Navbar = () => {
                     d="M4 6h16M4 12h16M4 18h16"
                   />
                 </svg>
-              </button>
+              </Button>
             </div>
           </div>
         </Container>
