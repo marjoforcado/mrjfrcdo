@@ -1,7 +1,7 @@
 import LinkComponent from "next/link";
 import Button, { PropsType as ButtonProps } from "../Button";
 
-type PropsType = Omit<ButtonProps, "component"> & {
+type PropsType = Omit<ButtonProps, "component" | "children"> & {
   href: string;
   children: any;
 };
