@@ -9,3 +9,9 @@
 .full-height {
   @apply h-full;
 }
+
+.margin-bottom {
+  &--4 {
+    @apply mb-4;
+  }
+}

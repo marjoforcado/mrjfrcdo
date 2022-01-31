@@ -164,7 +164,7 @@ const Experience = () => (
 
 const RatingGrid = ({ title, children }: { title: string; children: any }) => (
   <div className={styles["rating-grid__wrapper"]}>
-    <Text component="h1" color="loud" weight="bold" size="2xl">
+    <Text align="center" component="h1" color="loud" weight="bold" size="2xl">
       {title}
     </Text>
     <div className={styles["rating-grid__grid"]}>{children}</div>
@@ -172,7 +172,7 @@ const RatingGrid = ({ title, children }: { title: string; children: any }) => (
 );
 
 const Skills = () => (
-  <Container centerHorizontal>
+  <Container centerHorizontal marginBottom={4}>
     <div className={styles["skills__wrapper"]}>
       <RatingGrid title="Skills">
         <SkillRating title="HTML" rating={5} />
